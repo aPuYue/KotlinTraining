@@ -3,6 +3,7 @@ package io.access.kotlintraining
 import org.junit.Test
 import java.util.*
 import kotlin.test.assertEquals
+import kotlin.test.assertSame
 
 class SampleTest {
 
@@ -30,6 +31,17 @@ class SampleTest {
 
     }
 
+    @Test
+    fun TestFizzBuzz2() {
+
+        var t=10
+        fizzBuzz2(t)
+
+
+
+    }
+
+
 
     @Test
     fun TestLeapYear() {
@@ -52,4 +64,13 @@ class SampleTest {
     }
 
 
+
 }
+    @Test
+    fun main() {
+        val a = 5
+        assertEquals(a.isOdd(),actual = true)  // true
+
+        assertEquals(a.isEven(),actual = false) // false
+
+    }

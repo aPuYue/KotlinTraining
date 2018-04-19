@@ -37,6 +37,20 @@ fun fizzBuzz(){
     }
 }
 
+fun fizzBuzz2(i:Int){
+
+
+
+                if (i % 15 == 0) "FizzBuzz"
+                else if (i % 3 == 0) "Fizz"
+                else if (i % 5 == 0) "Buzz"
+                else i.toString()
+
+
+
+
+}
+
 
 // うるう年かどうかを判定する関数
 fun isLeapYear(y: Int): Boolean {
@@ -58,3 +72,11 @@ fun power(a: Double, n: Double): Double {
     else
         return a*n//.toLong()
 }
+
+fun Int.isOdd() = this%2 != 0
+
+
+fun Int.isEven()= this%2 == 0
+
+
+

@@ -22,12 +22,8 @@ class SampleTest {
 
     @Test
     fun TestFizzBuzz() {
-//        (1..100).forEach(::fizzBuzz)
+
         fizzBuzz()
-
-
-
-
 
     }
 

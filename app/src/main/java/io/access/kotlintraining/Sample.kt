@@ -36,3 +36,14 @@ fun fizzBuzz(){
         )
     }
 }
+
+
+// うるう年かどうかを判定する関数
+fun isLeapYear(y: Int): Boolean {
+    // TODO: 実装する
+    if ((y%4 == 0 && y%100 != 0) || y %400 == 0)
+        return true
+    else
+        return false
+
+}

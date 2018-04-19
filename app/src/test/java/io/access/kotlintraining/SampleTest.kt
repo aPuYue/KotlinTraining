@@ -27,4 +27,17 @@ class SampleTest {
 
     }
 
+
+    @Test
+    fun TestLeapYear() {
+
+        if (isLeapYear(2010))
+
+        println("うるう年です")
+
+        else
+
+        println("うるう年です")
+
+    }
 }

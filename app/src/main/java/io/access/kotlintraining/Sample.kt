@@ -27,7 +27,7 @@ fun fizzBuzz(){
 
     for (i in 1..100) {
         println(
-                when (true) {
+                when  {  //这个地方不是函数不需要（true））
                     i % 15 == 0 -> "FizzBuzz"
                     i % 3 == 0 -> "Fizz"
                     i % 5 == 0 -> "Buzz"
@@ -46,4 +46,15 @@ fun isLeapYear(y: Int): Boolean {
     else
         return false
 
+}
+
+fun power(a: Double, n: Double): Double {
+    if (a < 0 || n < 0) {
+        println("inputs must be positive. return 0")
+        return 0.toDouble()
+    }
+    // TODO: 実装する
+
+    else
+        return a*n//.toLong()
 }

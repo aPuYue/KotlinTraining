@@ -1,9 +1,12 @@
 package io.access.kotlintraining
 
 import org.junit.Test
+import java.util.*
 import kotlin.test.assertEquals
 
 class SampleTest {
+
+
     @Test
     fun testWelcome() {
         welcome()
@@ -40,4 +43,13 @@ class SampleTest {
         println("うるう年です")
 
     }
+
+    @Test
+    fun Testpower(){
+
+        println( power(12.3,56.3))
+
+    }
+
+
 }

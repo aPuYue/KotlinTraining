@@ -1,5 +1,5 @@
 package io.access.kotlintraining
-import java.util.Random
+import java.util.*
 
 fun welcome() {
     println("welcome to ACCESS!")
@@ -117,4 +117,51 @@ class NabeAtsu {
     }
 
 }
+
+
+//// コンパイル通すための諸々
+//class Client (val personalInfo: PersonalInfo?)
+//class PersonalInfo (val email: String?)
+//interface Mailer {
+//    fun sendMessage(email: String, message: String)
+//}
+//
+////fun sendMessageToClient(client: Client?, message: String?, mailer: Mailer) {
+//
+//    if(client==null||message==null) return
+//
+//    var personalInfo:PersonalInfo? = client?.personalInfo
+//    if(personalInfo==null) return
+//
+//    val email = personalInfo?.email
+//    if(email==null) return
+//
+//    mailer.sendMessage(email, message)
+//
+//}
+
+fun sendMessageToClient(
+        client: Client?, message: String?, mailer: Mailer
+) {
+    val email = client?.personalInfo?.email
+    if (email != null && message != null) {
+        mailer.sendMessage(email, message)
+    }
+}
+
+class Client (val personalInfo: PersonalInfo?)
+class PersonalInfo (val email: String?)
+
+interface Mailer {
+    fun sendMessage(email: String, message: String)
+}
+
+class MailerClass : Mailer{
+    override fun sendMessage(email: String, message: String){
+        println("message is :"+"$message")
+    }
+}
+
+
+
 

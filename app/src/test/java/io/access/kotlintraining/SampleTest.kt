@@ -1,10 +1,7 @@
 package io.access.kotlintraining
 
 import org.junit.Test
-import java.util.*
 import kotlin.test.assertEquals
-import kotlin.test.assertSame
-import java.util.Random
 
 class SampleTest {
 
@@ -92,7 +89,16 @@ class SampleTest {
         }
     }
 
+    @Test
+    fun Use(){
 
+        val p = PersonalInfo("puyue2016@gmail.com")
+        val c =Client (p)
+        val mc=MailerClass()
+
+        sendMessageToClient(c,"1234567890",mc)
+
+    }
 
 
 

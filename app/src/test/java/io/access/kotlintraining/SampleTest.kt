@@ -4,6 +4,7 @@ import org.junit.Test
 import java.util.*
 import kotlin.test.assertEquals
 import kotlin.test.assertSame
+import java.util.Random
 
 class SampleTest {
 
@@ -64,13 +65,39 @@ class SampleTest {
     }
 
 
-
-}
     @Test
-    fun main() {
+    fun Number() {
         val a = 5
         assertEquals(a.isOdd(),actual = true)  // true
 
         assertEquals(a.isEven(),actual = false) // false
 
     }
+
+
+    @Test
+    fun UseDice(){
+        val d = Dice(55)
+        for (i in 1..100) {
+            println(d.roll()) // 1〜16 までの数字
+        }
+        println(d.roll()) // Exception
+    }
+
+    @Test
+    fun UseNabeAtsu() {
+        val n = NabeAtsu()
+        for (i in 1..100) {
+            println(n.next())
+        }
+    }
+
+
+
+
+
+
+}
+
+
+

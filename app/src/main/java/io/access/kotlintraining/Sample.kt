@@ -1,4 +1,5 @@
 package io.access.kotlintraining
+import java.util.Random
 
 fun welcome() {
     println("welcome to ACCESS!")
@@ -79,4 +80,41 @@ fun Int.isOdd() = this%2 != 0
 fun Int.isEven()= this%2 == 0
 
 
+
+
+
+class Dice(num:Int){
+    var num :Int=100
+    var con :Int=0
+    fun roll(){
+
+        if ( con<=100 && con>=1 ){
+            val random = Random()
+            val n = random.nextInt(num) // 0〜99 までの範囲の値がランダムで返る
+            println(n)
+        }
+        else
+            println("I was broken")
+
+        con++
+    }
+
+}
+
+
+class NabeAtsu {
+    private var con: Int=0
+    fun next(): String {
+        con++
+        if (con%3==0 || con.toString().contains("3")){
+
+            return "Aho"
+        }
+        else
+        {
+            return con.toString()
+        }
+    }
+
+}
 

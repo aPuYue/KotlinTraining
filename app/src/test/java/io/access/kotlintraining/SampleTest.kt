@@ -22,6 +22,10 @@ class SampleTest {
         hello()
     }
 
+
+    /**
+     * fizzbuzz
+     */
     @Test
     fun TestFizzBuzz() {
 
@@ -39,8 +43,9 @@ class SampleTest {
 
     }
 
-
-
+    /**
+     * うるう年
+     */
     @Test
     fun TestLeapYear() {
 
@@ -54,6 +59,9 @@ class SampleTest {
 
     }
 
+    /**
+     * 奇数か偶数か
+     */
     @Test
     fun Testpower(){
 
@@ -71,7 +79,9 @@ class SampleTest {
 
     }
 
-
+    /**
+     * n 面のサイコロ
+     */
     @Test
     fun UseDice(){
         val d = Dice(55)
@@ -81,6 +91,9 @@ class SampleTest {
         println(d.roll()) // Exception
     }
 
+    /**
+     * 世界のナベアツ
+     */
     @Test
     fun UseNabeAtsu() {
         val n = NabeAtsu()
@@ -89,6 +102,9 @@ class SampleTest {
         }
     }
 
+    /**
+     * ヌルとの戦い
+     */
     @Test
     fun Use(){
 
